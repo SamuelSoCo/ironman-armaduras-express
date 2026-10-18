@@ -1,0 +1,118 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #f4f4f9;
+}
+
+/* Contenedor principal del menú en la barra */
+header {
+    background-color: #1e293b;
+    color: white;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Contenedor principal del menú en la barra */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Botón visible del menú */
+.dropbtn {
+    background-color: #3b82f6;
+    color: white;
+    padding: 0.6rem 1.2rem;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.dropbtn:hover {
+    background-color: #2563eb;
+}
+
+/* Oculta la lista de enlaces por defecto */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    right: 0;
+    top: 100%; /* Se despliega justo debajo del botón */
+    background-color: #ffffff;
+    min-width: 180px;
+    box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+    border-radius: 5px;
+    z-index: 1000;
+}
+
+/* Estilos de cada enlace del menú desplegable */
+.dropdown-content a {
+    color: #333333;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+/* Muestra el menú al pasar el cursor sobre el botón o el contenedor */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+main {
+    flex: 1;
+    padding: 2rem;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+footer {
+    background-color: #0f172a;
+    color: #94a3b8;
+    text-align: center;
+    padding: 1rem;
+}
+
+/* STYLES PARA EL CONTENEDOR DE LAS IMAGENES SOBRE LAS ARMADURAS
+ */
+
+.armadura-container{
+    max-width: 700px;
+    margin: 20px auto;
+    padding: 20px;
+    text-align: center;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+/* Imagen centrda y responsiva de la armadura  */
+.imagen-armadura{
+    display: block;
+    margin: 20px auto;
+    max-width: 100%;
+    height: auto;
+    max-height: 380px;
+    border-radius: 8px;
+}
+
+.descripcion-armadura{
+    text-align: justify;
+    line-height: 1.6;
+    margin-top: 15px;
+    color: #333333;
+}
